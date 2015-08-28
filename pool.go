@@ -21,7 +21,7 @@ func (c *Cache) Put(x interface{}) {
 	if len(c.saved) < cap(c.saved) {
 		c.saved = append(c.saved, x)
 	} else {
-		logging.Warning(c.name, "is full, you may need to increase pool size")
+		log.Warning(c.name, "is full, you may need to increase pool size")
 	}
 	c.mu.Unlock()
 }
