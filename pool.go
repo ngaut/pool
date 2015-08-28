@@ -1,8 +1,9 @@
 package pool
 
 import (
-	"github.com/ngaut/logging"
 	"sync"
+
+	"github.com/ngaut/log"
 )
 
 // A cache holds a set of reusable objects.
